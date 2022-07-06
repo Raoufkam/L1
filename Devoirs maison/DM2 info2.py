@@ -7,10 +7,14 @@ def appartient(n,liste) :
             if i==n :
 
                 return True
-        return False
+
+    return False
 
 liste = eval(input())
 
 nombre = int(input())
 
-print(appartient(nombre,liste))
+if(not(appartient(nombre,liste))) :
+    print("Non ce nombre n'appartient pas a la liste ")
+else :
+    print("Oui ce nombre est bien present dans la liste !")
